@@ -1,0 +1,916 @@
+font-face {
+font-family: "OpenSans CondensedBold";
+src:url("fonts/OpenSansCondensed-Bold.ttf");
+src:url("fonts/OpenSansCondensed-Bold.eot"),
+    url("fonts/OpenSansCondensed-Bold.otf"),
+    url("fonts/OpenSansCondensed-Bold.woff"),
+    url("fonts/OpenSansCondensed-Bold.woff2");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "OpenSans Bold";
+src: url("fonts/OpenSans-Bold.ttf");
+src:url("fonts/OpenSans-Bold.eot"),
+    url("fonts/OpenSans-Bold.otf"),
+    url("fonts/OpenSans-Bold.woff"),
+    url("fonts/OpenSans-Bold.woff2");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "OpenSans Italic";
+src: url("fonts/OpenSans-Italic.ttf");
+src:url("fonts/OpenSans-Italic.eot"),
+    url("fonts/OpenSans-Italic.otf"),
+    url("fonts/OpenSans-Italic.woff"),
+    url("fonts/OpenSans-Italic.woff2");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "OpenSans Light";
+src: url("fonts/OpenSans-Light.ttf");
+src:url("fonts/OpenSans-Light.eot"),
+    url("fonts/OpenSans-Light.otf"),
+    url("fonts/OpenSans-Light.woff"),
+    url("fonts/OpenSans-Light.woff2");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "OpenSans SemiBold";
+src: url("fonts/OpenSans-SemiBold.ttf");
+src:url("fonts/OpenSans-SemiBold.eot"),
+    url("fonts/OpenSans-SemiBold.otf"),
+    url("fonts/OpenSans-SemiBold.woff"),
+    url("fonts/OpenSans-SemiBold.woff2");
+font-style: normal;
+font-weight: normal;
+}
+
+@generalColor: #bb1d1f;
+@colorTxt:#000000;
+@colorInvers: #ffffff;
+@bgColor: #f7f7f7 ;
+@bgHeaderBlock: rgba(255,255,255,0.8);
+@logoColor:#9b9b9b;
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.b-container {  /*Центрует весь контент и задает ширину*/
+    margin:0 auto;
+    max-width:960px;
+}
+
+.b-header {
+    background-image: url(pictures/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 22px;
+    padding-bottom: 59px;
+
+
+    &__top { /* start:b-header-top */
+        width: 960px;
+        display:flex;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+}
+
+
+.b-logo {
+    margin-right: 19px;
+
+    &__img {
+        width: 429px;
+        height: 84px;
+    }
+}
+
+
+.b-contacts {
+    position: relative;
+    width: 449px;
+    height:159px;
+    background-color: @bgHeaderBlock;
+    border-radius:10px;
+    text-align: right;
+    font-size: 0;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-left: 14px;
+
+
+    &.b-contacts::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-top: 14px solid transparent;
+        border-right: 14px solid @bgHeaderBlock;
+        border-bottom: 14px solid transparent;
+        left: -14px;
+        top: 75px;
+    }
+
+    &__commissioner {
+        padding-top: 1px;
+        font-size: 36px;
+        color: @colorTxt;
+        font-family: "OpenSans CondensedBold";
+        text-decoration: none;
+        margin: 0px;
+        line-height: 44px;
+        letter-spacing: 0.1px;
+    }
+
+    &__around-the-clock {
+        letter-spacing:2px;
+        text-align: right;
+        text-transform: uppercase;
+        color:@generalColor;
+        font-size:36px;
+        font-family:"OpenSans CondensedBold";
+        line-height:44px;
+    }
+
+    &__number1 {
+        color: @colorTxt;
+        border-bottom: 3px dashed @colorTxt;
+        font-family:"OpenSans CondensedBold";
+        text-align: center;
+        text-transform: uppercase;
+        font-size:48px;
+        text-decoration:none;
+        line-height: 67px;
+        padding-right: 4px;
+    }
+
+    &__number1:hover {
+        color:@generalColor;
+        border-bottom: 3px dashed @generalColor;
+    }
+}
+
+.b-header-content {
+    display: inline-block;
+    width: 730px;
+    margin-bottom: 40px;
+
+
+    &__accident  {
+        width: 276px;
+        font-size: 36px;
+        font-family: "OpenSans Light";
+        background-color: #ffffff;
+        color: @colorTxt;
+        text-transform: uppercase;
+        padding: 3px 32px 4px 17px;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+    }
+
+    &__call{
+        width: 510px;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        background-color:#ffffff;
+        color: @colorTxt;
+        text-transform: uppercase;
+        padding: 4px 32px 3px 14px;
+        margin-bottom: 12px;
+        letter-spacing: -1px;
+    }
+
+    &__call-us {
+        font-family:"OpenSans Bold";
+        color:@generalColor;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+    }
+
+    &__number2 {
+        text-decoration: none;
+        color: @colorTxt;
+        letter-spacing: -0.4px;
+    }
+
+    &__number2:hover {
+        color:@generalColor;
+    }
+
+    &__conjunction {
+        width: 685px;
+        font-size: 36px;
+        font-family: "OpenSans Light";
+        background-color: #ffffff;
+        color: @colorTxt;
+        text-transform: uppercase;
+        padding: 3px 0px 4px 17px;
+        margin: 0px;
+    }
+
+    &__return-call {
+        font-family: "OpenSans Bold";
+        color: @generalColor;
+        text-transform: uppercase;
+        letter-spacing: -0.9px;
+        margin-left: -2px;
+    }
+    &__media-br {
+        display: none;
+    }
+}
+
+
+.b-form {
+    display: inline-block;
+    width: 500px;
+    font-size:36px;
+    font-family:"OpenSans Light";
+    letter-spacing:normal;
+    position: relative;
+
+    &__redstar {
+        position: absolute;
+        color: @generalColor;
+        top: 14px;
+        left: 7px;
+    }
+
+    &__name {
+        position: relative;
+        width: 446px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid @colorTxt;
+        font-size: 36px;
+        font-family: "OpenSans Light";
+        margin: 0px 0px 30px 0px;
+        padding-left: 35px;
+        padding-top: 5px;
+        text-transform: uppercase;
+    }
+
+    &__name::-webkit-input-placeholder {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__name::-moz-placeholder {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__name::-moz-placeholder {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__name::-ms-input-placeholder {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__redstar--position {
+        top: 93px;
+        left: 7px;
+    }
+
+    &__number {
+        position: relative;
+        width: 446px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid @colorTxt;
+        font-size: 35px;
+        font-family: "OpenSans Light";
+        margin: 0px 0px 38px 0px;
+        padding-left: 35px;
+        text-transform: uppercase;
+        letter-spacing: -0.4px;
+    }
+
+    &__number::-webkit-input-placeholder {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__number::-moz-placeholder {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__number::-moz-placeholder {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__number::-ms-input-placeholder  {
+        color: @colorTxt;
+        font-size:36px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__call-me {
+        width: 277px;
+        height: 46px;
+        background-color: @generalColor;
+        border-radius: 4px;
+        border: none;
+        color: #ffffff;
+        font-family: "OpenSans Bold";
+        font-size: 23px;
+        margin: 0;
+        box-shadow: -3px 5px 20px @colorTxt;
+        text-transform: uppercase;
+        letter-spacing: -0.2px;
+    }
+
+    &__call-me:hover {
+        color:@colorTxt;
+        background-color: #ffffff;
+    }
+
+    &__name ,
+    &__number ,
+    &__call-me:focus {
+        outline: none;
+    }
+}
+
+.b-block {
+    padding-top: 47px;
+
+
+    .b-block__title {
+        font-family: "OpenSans Light";
+        font-size: 48px;
+        font-weight: 300;
+        letter-spacing: -0.1px;
+        padding-bottom: 63px;
+        padding-left: 0px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .b-block__container {
+        font-size: 0;
+        padding-bottom: 39px;
+    }
+
+    .b-block__figure {
+        display: inline-block;
+        margin: 0px 42px 32px 0px;
+    }
+
+    .b-block__figure:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    .b-block__img {
+        width: 138px;
+        height: 138px;
+        border-radius: 50%;
+
+        &--second {
+            margin: 0px 0px 0px -3px;
+        }
+
+        &--third {
+            margin: 0px 0px 0px -5px;
+        }
+    }
+
+    .b-block__imgtxt {
+        display: inline-block;
+        margin: 0px;
+        width: 146px;
+        line-height: 20px;
+        font-family: "OpenSans SemiBold";
+        font-size: 15px;
+        vertical-align: top;
+        letter-spacing: 0.5px;
+        margin-top: 50px;
+        margin-left: 8px;
+        text-transform: uppercase;
+
+        &--second {
+            margin-top: 60px;
+        }
+    }
+
+    .b-block__imgtxt:nth-child(3n) {
+        margin-left: 1px;
+    }
+
+    .b-block___color-txt {
+        color:@generalColor;
+        text-transform: uppercase;
+    }
+
+
+    .b-block__imgtxt--third {
+        margin-top: 41px;
+    }
+
+    .b-block__imgtxt--fourth {
+        margin-top: 43px;
+    }
+
+    /* Отступы для некоторых круглых картинок */
+}
+
+
+/* start:b-ouradvantages */
+/*Задает еле заметный бэкграунд. */
+.b-list {
+    background: @bgColor;
+    padding-top: 57px;
+    padding-bottom: 81px;
+
+    &__title {
+        font-family: "OpenSans Light";
+        font-size: 48px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+        padding-bottom: 74px;
+        margin: 0;
+    }
+
+    &__start {
+        margin: 0;
+    }
+
+    &__item {
+        font-family: "OpenSans SemiBold";
+        font-size: 24px;
+        margin-bottom: 45px;
+        text-transform: uppercase;
+        list-style: none;
+        margin-left: -3px;
+        letter-spacing: -0.5px;
+    }
+
+    &__item--mod {
+        margin-bottom: 0;
+    }
+
+    &__img {
+        margin-right: 31px;
+    }
+}
+
+/* end:b-ouradvantages */
+/* start:yellow*/
+.b-text {
+    position: relative;
+    padding: 104px 0px 95px;
+
+    &__title{
+        display:none;
+    }
+
+    &__dtp {
+        position: relative;
+        font-family: "OpenSans Light";
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: 300;
+        padding: 0px 296px 2px 156px;
+        margin: 0;
+        letter-spacing: -0.2px;
+        width: 509px;
+    }
+
+    &__how {
+        position: relative;
+        font-family: "OpenSans Light";
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: 300;
+        width: 748px;
+        padding: 0px 0px 29px 155px;
+        margin: 0;
+        letter-spacing: -0.1px;
+    }
+}
+
+.b-inside-txt {
+    width: 803px;
+    border-radius: 10px;
+    border: 3px solid #ff9c00;
+    padding: 20px 15px 22px;
+
+    &__italic {
+        position: relative;
+        font-size: 18px;
+        font-family: "OpenSans Italic";
+        text-align: center;
+        margin: 0;
+    }
+
+    &__italic--sign::before {
+        content: url(pictures/symbol.png);
+        position: absolute;
+        left: 13px;
+        bottom: -35px;
+    }
+    &__italic--line {
+        margin-bottom: 38px;
+        position: relative;
+    }
+
+    &__italic--line::before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-top: 1.4px solid;
+        border-right: 111px solid @colorTxt;
+        border-bottom: 2.7px solid;
+        left: 44.5%;
+        top: 36px;
+    }
+
+    &__mod {
+        position: relative;
+        font-size: 16px;
+        font-family: "OpenSans SemiBold";
+        text-align: center;
+        margin: 0;
+
+        &--m {
+            margin-bottom: 22px;
+            margin-top: 0;
+        }
+    }
+
+}
+/* end:b-yellow */
+
+/* start:b-redform */
+.b-redform {
+    background-color: @generalColor;
+    background-size: cover;
+    padding-top: 32px;
+    padding-bottom: 42px;
+}
+
+.b-form-title {
+    font-size: 24px;
+    font-family: "OpenSans SemiBold";
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0px 12px 38px 13px;
+    letter-spacing: -0.24px;
+}
+
+.b-form-container {
+    display: flex;
+    width: 960px;
+    margin: 0;
+    padding: 0;
+
+    &__name {
+        border: none;
+        outline: none;
+        font-size: 18px;
+        padding-left: 12px;
+        padding-right: 111px;
+        height: 38px;
+        margin-right: 19px;
+    }
+
+    &__name::-webkit-input-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__name::-moz-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__name::-moz-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__name::-ms-input-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__number {
+        border: none;
+        outline: none;
+        font-size: 18px;
+        height: 38px;
+        padding-left: 13px;
+        padding-right: 108px;
+        margin-right: 19px;
+        letter-spacing: -0.2px;
+    }
+
+    &__number::-webkit-input-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__number::-moz-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__number::-moz-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__number::-ms-input-placeholder {
+        color: @colorTxt;
+        border:none;
+        outline:none;
+        font-size:18px;
+        font-family:"OpenSans Light";
+        text-transform: uppercase;
+    }
+
+    &__callme {
+        border: none;
+        font-size: 19px;
+        border: 2px solid #ffffff;
+        padding-left: 27px;
+        padding-right: 17px;
+        background-color: @generalColor;
+        color: #ffffff;
+        font-family: "OpenSans SemiBold";
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    &__callme:hover {
+        background-color:#ffffff;
+        color: @colorTxt;
+    }
+}
+/* end:red-bottom */
+/* start:footer */
+.b-footer {
+    display: flex;
+    padding: 41px 0px 30px 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__img {
+        height: 44px;
+        width: 205px;
+        margin-right: 12px;
+        margin-bottom: -5px;
+    }
+
+    &__number {
+        font-size: 24px;
+        color: @colorTxt;
+        font-family: "OpenSans CondensedBold";
+        border-bottom: 2px dashed @colorTxt;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 41px;
+        vertical-align: top;
+        letter-spacing: -0.8px;
+    }
+
+    &__number:hover {
+        color:@generalColor;
+        border-bottom: 2px dashed @generalColor;
+    }
+
+    &__contacts {
+        font-size: 21px;
+        color:black;
+        font-family:"OpenSans CondensedBold";
+        vertical-align: top;
+        margin-top: -3px;
+    }
+
+    &__logo {
+        margin-top: 0px;
+        line-height: 0px;
+    }
+
+    &__logo--img {
+        width: 188px;
+        height: 29px;
+        margin-top: 12px;
+        margin-bottom: -10px;
+    }
+
+    &__link{
+        font-family: "OpenSans Light";
+        font-size: 14px;
+        color: @logoColor;
+        text-decoration:none;
+    }
+
+    &__link:hover {
+        color:@generalColor;
+        text-decoration:none;
+    }
+}
+
+/* end:footer */
+
+/*begin:mobile*/
+@media  (max-width: 767px) {
+
+.b-header__top {
+    width: auto;
+    flex-direction: column;
+}
+
+.b-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+
+
+    &__accident {
+        width: auto;
+    }
+
+    &__call-us {
+        width: auto;
+    }
+
+    &__conjunction {
+        width: auto;
+    }
+}
+
+.b-form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__redstar {
+        top: 11px;
+        left: 152px;
+    }
+
+    &__redstar--position {
+        top: 91px;
+        left: 152px;
+    }
+}
+
+.b-header-content__media-br {
+    display: block;
+}
+
+.b-block {
+    text-align: center;
+
+    &__figure:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    &__imgtxt:nth-child(3) {
+        margin: 0px 42px 32px 0px;
+    }
+}
+
+.b-list {
+    text-align: center;
+    width: auto;
+}
+
+.b-text {
+    text-align: center;
+    width: auto;
+
+    &__dtp {
+        padding: 0px 147px;
+
+    }
+
+    &__how {
+        padding: 0px 107px 15px;
+
+    }
+}
+
+.b-inside-txt {
+    width: auto;
+
+
+    &__italic {
+        padding: 0px 0px 0px 43px;
+    }
+
+    &__italic--line::before {
+        top: 42px;
+    }
+
+    &__mod {
+        padding: 0 0 0 15px;
+    }
+}
+
+.b-form-title {
+    width: auto;
+    padding: 0px 73px 38px;
+}
+
+.b-form-container {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+
+
+   &__name {
+        padding: 0 0 0 12px;
+        margin:  0 0 12px 0;
+
+    }
+
+    &__number {
+        padding: 0 6px 0;
+        margin: 0 0 12px 0;
+    }
+
+    &__callme {
+        padding: 4px 16px;
+    }
+}
+
+.b-footer {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        text-align: center;
+
+    }
+}
+
+}

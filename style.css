@@ -1,0 +1,760 @@
+@font-face {
+  font-family: "OpenSans CondensedBold";
+  src: url("fonts/OpenSansCondensed-Bold.ttf");
+  src: url("fonts/OpenSansCondensed-Bold.eot"), url("fonts/OpenSansCondensed-Bold.otf"), url("fonts/OpenSansCondensed-Bold.woff"), url("fonts/OpenSansCondensed-Bold.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url("fonts/OpenSans-Bold.ttf");
+  src: url("fonts/OpenSans-Bold.eot"), url("fonts/OpenSans-Bold.otf"), url("fonts/OpenSans-Bold.woff"), url("fonts/OpenSans-Bold.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSans Italic";
+  src: url("fonts/OpenSans-Italic.ttf");
+  src: url("fonts/OpenSans-Italic.eot"), url("fonts/OpenSans-Italic.otf"), url("fonts/OpenSans-Italic.woff"), url("fonts/OpenSans-Italic.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSans Light";
+  src: url("fonts/OpenSans-Light.ttf");
+  src: url("fonts/OpenSans-Light.eot"), url("fonts/OpenSans-Light.otf"), url("fonts/OpenSans-Light.woff"), url("fonts/OpenSans-Light.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSans SemiBold";
+  src: url("fonts/OpenSans-SemiBold.ttf");
+  src: url("fonts/OpenSans-SemiBold.eot"), url("fonts/OpenSans-SemiBold.otf"), url("fonts/OpenSans-SemiBold.woff"), url("fonts/OpenSans-SemiBold.woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.b-container {
+  /*Центрует весь контент и задает ширину*/
+  margin: 0 auto;
+  max-width: 960px;
+}
+.b-header {
+  background-image: url(pictures/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 22px;
+  padding-bottom: 59px;
+}
+.b-header__top {
+  /* start:b-header-top */
+  width: 960px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.b-logo {
+  margin-right: 19px;
+}
+.b-logo__img {
+  width: 429px;
+  height: 84px;
+}
+.b-contacts {
+  position: relative;
+  width: 449px;
+  height: 159px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  text-align: right;
+  font-size: 0;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-left: 14px;
+}
+.b-contacts.b-contacts::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-right: 14px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 14px solid transparent;
+  left: -14px;
+  top: 75px;
+}
+.b-contacts__commissioner {
+  padding-top: 1px;
+  font-size: 36px;
+  color: #000000;
+  font-family: "OpenSans CondensedBold";
+  text-decoration: none;
+  margin: 0px;
+  line-height: 44px;
+  letter-spacing: 0.1px;
+}
+.b-contacts__around-the-clock {
+  letter-spacing: 2px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #bb1d1f;
+  font-size: 36px;
+  font-family: "OpenSans CondensedBold";
+  line-height: 44px;
+}
+.b-contacts__number1 {
+  color: #000000;
+  border-bottom: 3px dashed #000000;
+  font-family: "OpenSans CondensedBold";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  text-decoration: none;
+  line-height: 67px;
+  padding-right: 4px;
+}
+.b-contacts__number1:hover {
+  color: #bb1d1f;
+  border-bottom: 3px dashed #bb1d1f;
+}
+.b-header-content {
+  display: inline-block;
+  width: 730px;
+  margin-bottom: 40px;
+}
+.b-header-content__accident {
+  width: 276px;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 3px 32px 4px 17px;
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+.b-header-content__call {
+  width: 510px;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 4px 32px 3px 14px;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+.b-header-content__call-us {
+  font-family: "OpenSans Bold";
+  color: #bb1d1f;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+.b-header-content__number2 {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: -0.4px;
+}
+.b-header-content__number2:hover {
+  color: #bb1d1f;
+}
+.b-header-content__conjunction {
+  width: 685px;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 3px 0px 4px 17px;
+  margin: 0px;
+}
+.b-header-content__return-call {
+  font-family: "OpenSans Bold";
+  color: #bb1d1f;
+  text-transform: uppercase;
+  letter-spacing: -0.9px;
+  margin-left: -2px;
+}
+.b-header-content__media-br {
+  display: none;
+}
+.b-form {
+  display: inline-block;
+  width: 500px;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  letter-spacing: normal;
+  position: relative;
+}
+.b-form__redstar {
+  position: absolute;
+  color: #bb1d1f;
+  top: 14px;
+  left: 7px;
+}
+.b-form__name {
+  position: relative;
+  width: 446px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  margin: 0px 0px 30px 0px;
+  padding-left: 35px;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+.b-form__name::-webkit-input-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__name::-moz-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__name::-moz-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__name::-ms-input-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__redstar--position {
+  top: 93px;
+  left: 7px;
+}
+.b-form__number {
+  position: relative;
+  width: 446px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-size: 35px;
+  font-family: "OpenSans Light";
+  margin: 0px 0px 38px 0px;
+  padding-left: 35px;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+}
+.b-form__number::-webkit-input-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__number::-moz-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__number::-moz-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__number::-ms-input-placeholder {
+  color: #000000;
+  font-size: 36px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form__call-me {
+  width: 277px;
+  height: 46px;
+  background-color: #bb1d1f;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-family: "OpenSans Bold";
+  font-size: 23px;
+  margin: 0;
+  box-shadow: -3px 5px 20px #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.2px;
+}
+.b-form__call-me:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.b-form__name,
+.b-form__number,
+.b-form__call-me:focus {
+  outline: none;
+}
+.b-block {
+  padding-top: 47px;
+  /* Отступы для некоторых круглых картинок */
+}
+.b-block .b-block__title {
+  font-family: "OpenSans Light";
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: -0.1px;
+  padding-bottom: 63px;
+  padding-left: 0px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.b-block .b-block__container {
+  font-size: 0;
+  padding-bottom: 39px;
+}
+.b-block .b-block__figure {
+  display: inline-block;
+  margin: 0px 42px 32px 0px;
+}
+.b-block .b-block__figure:nth-child(3n) {
+  margin-right: 0;
+}
+.b-block .b-block__img {
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+}
+.b-block .b-block__imgtxt {
+  display: inline-block;
+  margin: 0px;
+  width: 146px;
+  line-height: 20px;
+  font-family: "OpenSans SemiBold";
+  font-size: 15px;
+  vertical-align: top;
+  letter-spacing: 0.5px;
+  margin-top: 50px;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+.b-block .b-block__imgtxt:nth-child(3n) {
+  margin-left: 1px;
+}
+.b-block .b-block___color-txt {
+  color: #bb1d1f;
+  text-transform: uppercase;
+}
+.b-block .b-block__imgtxt--second {
+  margin-top: 60px;
+}
+.b-block .b-block__imgtxt--third {
+  margin-top: 41px;
+}
+.b-block .b-block__imgtxt--fourth {
+  margin-top: 43px;
+}
+.b-block .b-block__img--second {
+  margin: 0px 0px 0px -3px;
+}
+.b-block .b-block__img--third {
+  margin: 0px 0px 0px -5px;
+}
+/* start:b-ouradvantages */
+/*Задает еле заметный бэкграунд. */
+.b-list {
+  background: #f7f7f7;
+  padding-top: 57px;
+  padding-bottom: 81px;
+}
+.b-list__title {
+  font-family: "OpenSans Light";
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  padding-bottom: 74px;
+  margin: 0;
+}
+.b-list__start {
+  margin: 0;
+}
+.b-list__item {
+  font-family: "OpenSans SemiBold";
+  font-size: 24px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  list-style: none;
+  margin-left: -3px;
+  letter-spacing: -0.5px;
+}
+.b-list__item--mod {
+  margin-bottom: 0;
+}
+.b-list__img {
+  margin-right: 31px;
+}
+/* end:b-ouradvantages */
+/* start:yellow*/
+.b-text {
+  position: relative;
+  padding: 104px 0px 95px;
+}
+.b-text__title {
+  display: none;
+}
+.b-text__dtp {
+  position: relative;
+  font-family: "OpenSans Light";
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 0px 296px 2px 156px;
+  margin: 0;
+  letter-spacing: -0.2px;
+  width: 509px;
+}
+.b-text__how {
+  position: relative;
+  font-family: "OpenSans Light";
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 748px;
+  padding: 0px 0px 29px 155px;
+  margin: 0;
+  letter-spacing: -0.1px;
+}
+.b-inside-txt {
+  width: 803px;
+  border-radius: 10px;
+  border: 3px solid #ff9c00;
+  padding: 20px 15px 22px;
+}
+.b-inside-txt__italic {
+  position: relative;
+  font-size: 18px;
+  font-family: "OpenSans Italic";
+  text-align: center;
+  margin: 0;
+}
+.b-inside-txt__italic--sign::before {
+  content: url(pictures/symbol.png);
+  position: absolute;
+  left: 13px;
+  bottom: -35px;
+}
+.b-inside-txt__italic--line {
+  margin-bottom: 38px;
+  position: relative;
+}
+.b-inside-txt__italic--line::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-top: 1.4px solid;
+  border-right: 111px solid #000000;
+  border-bottom: 2.7px solid;
+  left: 44.5%;
+  top: 36px;
+}
+.b-inside-txt__mod {
+  position: relative;
+  font-size: 16px;
+  font-family: "OpenSans SemiBold";
+  text-align: center;
+  margin: 0;
+}
+.b-inside-txt__mod--m {
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+/* end:b-yellow */
+/* start:b-redform */
+.b-redform {
+  background-color: #bb1d1f;
+  background-size: cover;
+  padding-top: 32px;
+  padding-bottom: 42px;
+}
+.b-form-title {
+  font-size: 24px;
+  font-family: "OpenSans SemiBold";
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0px 12px 38px 13px;
+  letter-spacing: -0.24px;
+}
+.b-form-container {
+  display: flex;
+  width: 960px;
+  margin: 0;
+  padding: 0;
+}
+.b-form-container__name {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding-left: 12px;
+  padding-right: 111px;
+  height: 38px;
+  margin-right: 19px;
+}
+.b-form-container__name::-webkit-input-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__name::-moz-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__name::-moz-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__name::-ms-input-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__number {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  height: 38px;
+  padding-left: 13px;
+  padding-right: 108px;
+  margin-right: 19px;
+  letter-spacing: -0.2px;
+}
+.b-form-container__number::-webkit-input-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__number::-moz-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__number::-moz-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__number::-ms-input-placeholder {
+  color: #000000;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "OpenSans Light";
+  text-transform: uppercase;
+}
+.b-form-container__callme {
+  border: none;
+  font-size: 19px;
+  border: 2px solid #ffffff;
+  padding-left: 27px;
+  padding-right: 17px;
+  background-color: #bb1d1f;
+  color: #ffffff;
+  font-family: "OpenSans SemiBold";
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.b-form-container__callme:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* end:red-bottom */
+/* start:footer */
+.b-footer {
+  display: flex;
+  padding: 41px 0px 30px 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.b-footer__img {
+  height: 44px;
+  width: 205px;
+  margin-right: 12px;
+  margin-bottom: -5px;
+}
+.b-footer__number {
+  font-size: 24px;
+  color: #000000;
+  font-family: "OpenSans CondensedBold";
+  border-bottom: 2px dashed #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 41px;
+  vertical-align: top;
+  letter-spacing: -0.8px;
+}
+.b-footer__number:hover {
+  color: #bb1d1f;
+  border-bottom: 2px dashed #bb1d1f;
+}
+.b-footer__contacts {
+  font-size: 21px;
+  color: black;
+  font-family: "OpenSans CondensedBold";
+  vertical-align: top;
+  margin-top: -3px;
+}
+.b-footer__logo {
+  margin-top: 0px;
+  line-height: 0px;
+}
+.b-footer__logo--img {
+  width: 188px;
+  height: 29px;
+  margin-top: 12px;
+  margin-bottom: -10px;
+}
+.b-footer__link {
+  font-family: "OpenSans Light";
+  font-size: 14px;
+  color: #9b9b9b;
+  text-decoration: none;
+}
+.b-footer__link:hover {
+  color: #bb1d1f;
+  text-decoration: none;
+}
+/* end:footer */
+/*begin:mobile*/
+@media (max-width: 767px) {
+  .b-header__top {
+    flex-direction: column;
+  }
+  .b-header__top {
+    width: auto;
+  }
+  .b-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .b-header-content__accident {
+    width: auto;
+  }
+  .b-header-content__call-us {
+    width: auto;
+  }
+  .b-header-content__conjunction {
+    width: auto;
+  }
+  .b-form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .b-form__redstar {
+    top: 11px;
+    left: 152px;
+  }
+  .b-form__redstar--position {
+    top: 91px;
+    left: 152px;
+  }
+  .b-header-content__media-br {
+    display: block;
+  }
+  .b-block__title {
+    text-align: center;
+  }
+  .b-block__container {
+    text-align: center;
+  }
+  .b-block__figure:nth-child(2n) {
+    margin-right: 0;
+  }
+  .b-block__imgtxt:nth-child(3) {
+    margin: 0px 42px 32px 0px;
+  }
+  .b-list {
+    text-align: center;
+  }
+  .b-text__dtp {
+    width: auto;
+    padding: 0px 147px;
+    text-align: center;
+  }
+  .b-text__how {
+    width: auto;
+    padding: 0px 107px 15px;
+    text-align: center;
+  }
+  .b-inside-txt {
+    width: auto;
+  }
+  .b-inside-txt__italic {
+    padding: 0px 0px 0px 43px;
+  }
+  .b-inside-txt__italic--line::before {
+    top: 42px;
+  }
+  .b-inside-txt__mod {
+    padding: 0 0 0 15px;
+  }
+  .b-form-container {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .b-form-title {
+    width: auto;
+    padding: 0px 73px 38px;
+  }
+  .b-form-container__name {
+    padding: 0 0 0 12px;
+    margin: 0 0 12px 0;
+  }
+  .b-form-container__number {
+    padding: 0 6px 0;
+    margin: 0 0 12px 0;
+  }
+  .b-form-container__callme {
+    padding: 4px 16px;
+  }
+  .b-footer {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .b-footer__logo {
+    text-align: center;
+  }
+}
