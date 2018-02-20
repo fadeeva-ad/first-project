@@ -1,4 +1,4 @@
-font-face {
+@font-face {
 font-family: "OpenSans CondensedBold";
 src:url("fonts/OpenSansCondensed-Bold.ttf");
 src:url("fonts/OpenSansCondensed-Bold.eot"),
@@ -397,17 +397,9 @@ body {
         width: 138px;
         height: 138px;
         border-radius: 50%;
-
-        &--second {
-            margin: 0px 0px 0px -3px;
-        }
-
-        &--third {
-            margin: 0px 0px 0px -5px;
-        }
     }
 
-    .b-block__imgtxt {
+    .b-block__imgtxt{
         display: inline-block;
         margin: 0px;
         width: 146px;
@@ -419,11 +411,7 @@ body {
         margin-top: 50px;
         margin-left: 8px;
         text-transform: uppercase;
-
-        &--second {
-            margin-top: 60px;
-        }
-    }
+     }
 
     .b-block__imgtxt:nth-child(3n) {
         margin-left: 1px;
@@ -434,6 +422,9 @@ body {
         text-transform: uppercase;
     }
 
+    .b-block__imgtxt--second {
+        margin-top: 60px;
+    }
 
     .b-block__imgtxt--third {
         margin-top: 41px;
@@ -444,6 +435,13 @@ body {
     }
 
     /* Отступы для некоторых круглых картинок */
+    .b-block__img--second {
+        margin: 0px 0px 0px -3px;
+    }
+
+    .b-block__img--third {
+        margin: 0px 0px 0px -5px;
+    }
 }
 
 
@@ -565,13 +563,11 @@ body {
         font-family: "OpenSans SemiBold";
         text-align: center;
         margin: 0;
-
-        &--m {
-            margin-bottom: 22px;
-            margin-top: 0;
-        }
     }
-
+    &__mod--m {
+        margin-bottom: 22px;
+        margin-top: 0;
+    }
 }
 /* end:b-yellow */
 
@@ -755,14 +751,14 @@ body {
         line-height: 0px;
     }
 
-    &__logo--img {
+    &__picture {
         width: 188px;
         height: 29px;
         margin-top: 12px;
         margin-bottom: -10px;
     }
 
-    &__link{
+    &__link {
         font-family: "OpenSans Light";
         font-size: 14px;
         color: @logoColor;
@@ -853,6 +849,7 @@ body {
     }
 
     &__how {
+        width:auto;  /* почему без этого нельзя? */
         padding: 0px 107px 15px;
 
     }

@@ -635,7 +635,7 @@ body {
   margin-top: 0px;
   line-height: 0px;
 }
-.b-footer__logo--img {
+.b-footer__picture {
   width: 188px;
   height: 29px;
   margin-top: 12px;
@@ -655,10 +655,8 @@ body {
 /*begin:mobile*/
 @media (max-width: 767px) {
   .b-header__top {
-    flex-direction: column;
-  }
-  .b-header__top {
     width: auto;
+    flex-direction: column;
   }
   .b-header-content {
     display: flex;
@@ -692,10 +690,7 @@ body {
   .b-header-content__media-br {
     display: block;
   }
-  .b-block__title {
-    text-align: center;
-  }
-  .b-block__container {
+  .b-block {
     text-align: center;
   }
   .b-block__figure:nth-child(2n) {
@@ -706,16 +701,19 @@ body {
   }
   .b-list {
     text-align: center;
+    width: auto;
+  }
+  .b-text {
+    text-align: center;
+    width: auto;
   }
   .b-text__dtp {
-    width: auto;
     padding: 0px 147px;
-    text-align: center;
   }
   .b-text__how {
     width: auto;
+    /* почему без этого нельзя? */
     padding: 0px 107px 15px;
-    text-align: center;
   }
   .b-inside-txt {
     width: auto;
@@ -729,14 +727,14 @@ body {
   .b-inside-txt__mod {
     padding: 0 0 0 15px;
   }
+  .b-form-title {
+    width: auto;
+    padding: 0px 73px 38px;
+  }
   .b-form-container {
     flex-direction: column;
     align-items: center;
     width: auto;
-  }
-  .b-form-title {
-    width: auto;
-    padding: 0px 73px 38px;
   }
   .b-form-container__name {
     padding: 0 0 0 12px;
