@@ -38,8 +38,12 @@
 			<!-- end:header-top-->
 			<!-- start:form -->
 			<form class="b-form" action="#" method="get">
-				<span class="b-form__redstar">*</span><input class="b-form__name" type="text" name="name" placeholder="Имя"/>
-				<span class="b-form__redstar b-form__redstar--position">*</span><input class="b-form__number" type="text" name="number" placeholder="Мобильный телефон"/>
+				<div class="b-form__redstar-container">
+					<span class="b-form__redstar">*</span><input class="b-form__name" type="text" name="name" placeholder="Имя"/>
+				</div>
+				<div class="b-form__redstar-container">
+					<span class="b-form__redstar b-form__redstar--position">*</span><input class="b-form__number" type="text" name="number" placeholder="Мобильный телефон"/>
+				</div>
 				<input class="b-form__call-me" type="submit" value="Перезвоните мне"/>
 			</form>
 		</div>
@@ -51,31 +55,43 @@
 				<h2 class="b-block__title">Наша работа</h2>
 				<div class="b-block__container">
 				<figure class="b-block__figure">
-					<img class="b-block__img" src="pictures/round1.png">
+					<div class="b-block__img-container">
+						<img class="b-block__img" src="pictures/round1.png">
+					</div>
 					<figcaption class="b-block__imgtxt">Выезд на место <span class="b-block___color-txt">Дтп</span>
 					</figcaption>
 				</figure>
 				<figure class="b-block__figure">
-					<img class="b-block__img b-block__img--second" src="pictures/round2.png">
+					<div class="b-block__img-container">
+						<img class="b-block__img b-block__img--second" src="pictures/round2.png">
+					</div>
 					<figcaption class="b-block__imgtxt b-block__imgtxt--second"> Оценка <span class="b-block___color-txt">ущерба</span>
 					</figcaption>
 				</figure>
 				<figure class="b-block__figure">
-					<img class="b-block__img b-block__img--third" src="pictures/round3.png">
+					<div class="b-block__img-container">
+						<img class="b-block__img b-block__img--third" src="pictures/round3.png">
+					</div>
 					<figcaption class="b-block__imgtxt b-block__imgtxt--third"><span class="b-block___color-txt">Фотосъемка</span> места происшествия
 					</figcaption>
 				</figure>
 				<figure class="b-block__figure">
-					<img class="b-block__img b-round-blocks__img--fourth" src="pictures/round4.png">
+					<div class="b-block__img-container">
+						<img class="b-block__img b-round-blocks__img--fourth" src="pictures/round4.png">
+					</div>
 					<figcaption class="b-block__imgtxt b-block__imgtxt--fourth">Составление пакета <span class="b-block___color-txt">документов</span>
 					</figcaption>
 				</figure>
 					<figure class="b-block__figure">
-					<img class="b-block__img" src="pictures/round5.png">
+					<div class="b-block__img-container">
+						<img class="b-block__img" src="pictures/round5.png">
+					</div>
 					<figcaption class="b-block__imgtxt b-block__imgtxt--fifth"><span class="b-block___color-txt">Полное </span> сопровождение</figcaption>
 				</figure>
 				<figure class="b-block__figure">
-					<img  class="b-block__img" src="pictures/round6.png" >
+					<div class="b-block__img-container">
+						<img  class="b-block__img" src="pictures/round6.png" >
+					</div>
 					<figcaption class="b-block__imgtxt">Услуги<span class="b-block___color-txt"> эвакуатора</span>
 					</figcaption>
 				</figure>
@@ -125,13 +141,14 @@
 	<!-- start:b-footer -->
 	<footer class="b-footer b-container">
 			<div class="b-footer__txt">
-				<a href="javascript:void(0)">
-					<img class="b-footer__img" src="pictures/logo.png" title="Аварком73" alt="avarcom73"></a>
+				<a class="b-footer__img-container" href="javascript:void(0)">
+					<img class="b-footer__img" src="pictures/logo.png" title="Аварком73" alt="avarcom73">
+				</a>
 				<a class="b-footer__number" href="tel:+78442993366" title="8 (8422) 99 33 66">8 (8422) 99 - 33 - 66</a>
 				<p class="b-footer__contacts">Вызов аварийных комиссаров круглосуточно</p>
 			</div>
 			<a class="b-footer__logo">
-				<div href="javascript:void(0)">
+				<div class="b-footer__logo-container" href="javascript:void(0)">
 					<img class="b-footer__picture" src="pictures/ivanov.png" title="контора Иванова" alt="контора Иванова">
 				</div>
 				<p class="b-footer__link">Разработка сайта</p>
