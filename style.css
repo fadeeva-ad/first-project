@@ -292,6 +292,7 @@ body {
   box-shadow: -3px 5px 20px #000000;
   text-transform: uppercase;
   letter-spacing: -0.2px;
+  cursor: pointer;
 }
 .b-form__call-me:hover {
   color: #000000;
@@ -599,6 +600,7 @@ body {
   font-family: "OpenSans SemiBold";
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 .b-form-container__callme:hover {
   background-color: #ffffff;
@@ -618,6 +620,7 @@ body {
   width: 205px;
   margin-right: 12px;
   margin-bottom: -5px;
+  cursor: pointer;
 }
 .b-footer__img {
   width: 100%;
@@ -632,6 +635,7 @@ body {
   line-height: 41px;
   vertical-align: top;
   letter-spacing: -0.8px;
+  cursor: pointer;
 }
 .b-footer__number:hover {
   color: #bb1d1f;
@@ -653,6 +657,7 @@ body {
   height: 29px;
   margin-top: 12px;
   margin-bottom: -10px;
+  cursor: pointer;
 }
 .b-footer__picture {
   width: 100%;
@@ -662,6 +667,7 @@ body {
   font-size: 14px;
   color: #9b9b9b;
   text-decoration: none;
+  cursor: pointer;
 }
 .b-footer__link:hover {
   color: #bb1d1f;
@@ -678,11 +684,14 @@ body {
   .b-logo {
     margin-bottom: 20px;
   }
+  .b-contacts {
+    margin-left: 0;
+  }
   .b-contacts::after {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
   }
   .b-header-content {
@@ -753,6 +762,10 @@ body {
     bottom: -46px;
     transform: scale(0.8);
   }
+  .b-form-title {
+    width: auto;
+    font-size: 22px;
+  }
   .b-redform {
     width: auto;
     text-align: center;
@@ -785,11 +798,14 @@ body {
   .b-logo {
     margin-bottom: 20px;
   }
+  .b-contacts {
+    margin-left: 0;
+  }
   .b-contacts::after {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
   }
   .b-header-content {
@@ -846,6 +862,7 @@ body {
   .b-list {
     text-align: center;
     width: auto;
+    font-size: 22px;
   }
   .b-text {
     text-align: center;
@@ -865,6 +882,9 @@ body {
   }
   .b-inside-txt__italic--line::before {
     top: 56px;
+  }
+  .b-inside-txt__italic--sign::before {
+    transform: scale(0.6);
   }
   .b-inside-txt__mod {
     padding: 0 0 0 15px;
@@ -936,7 +956,7 @@ body {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
   }
   .b-header-content {
@@ -965,6 +985,7 @@ body {
   }
   .b-form {
     width: auto;
+    font-size: 22px;
   }
   .b-form__redstar {
     top: 8px !important;
@@ -977,63 +998,68 @@ body {
   }
   .b-form__name {
     width: 80%;
-    font-size: 30px;
+    font-size: 22px !important;
   }
   .b-form__name::-webkit-input-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__name::-moz-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__name::-moz-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__name::-ms-input-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number {
-    width: 80%;
-    font-size: 30px;
+    width: 95%;
+    font-size: 22px;
   }
   .b-form__number::-webkit-input-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number::-moz-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number::-moz-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number::-ms-input-placeholder {
     color: #000000;
-    font-size: 30px;
+    font-size: 22px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__call-me {
     width: auto;
-    font-size: 30px;
+    font-size: 22px;
+  }
+  .b-form-title {
+    width: 90%;
+    padding: 0px 22px 37px;
+    font-size: 18px;
   }
   .b-block {
     width: auto;
@@ -1094,9 +1120,9 @@ body {
     left: 139px;
   }
   .b-inside-txt__italic--sign::before {
-    left: -13px;
-    bottom: -53px;
-    transform: scale(0.7);
+    left: -18px;
+    bottom: -66px;
+    transform: scale(0.5);
   }
   .b-footer {
     width: auto;
@@ -1107,7 +1133,7 @@ body {
   }
   .b-footer__img-container {
     margin: 0;
-    padding: 0 71px;
+    padding: 0 69px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1149,7 +1175,7 @@ body {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
   }
   .b-header-content {
@@ -1206,57 +1232,57 @@ body {
   }
   .b-form__name {
     width: 70%;
-    font-size: 20px;
+    font-size: 17px;
   }
   .b-form__name::-webkit-input-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__name::-moz-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__name::-moz-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__name::-ms-input-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number {
     width: 80%;
-    font-size: 20px;
+    font-size: 17px;
   }
   .b-form__number::-webkit-input-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number::-moz-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number::-moz-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
   .b-form__number::-ms-input-placeholder {
     color: #000000;
-    font-size: 20px;
+    font-size: 17px;
     font-family: "OpenSans Light";
     text-transform: uppercase;
   }
@@ -1333,8 +1359,9 @@ body {
     transform: scale(0.6);
   }
   .b-form-title {
-    font-size: 20px;
-    padding: 10px 20px !important;
+    display: block;
+    font-size: 16px;
+    padding: 10px 21px !important;
   }
   .b-footer {
     width: auto;
@@ -1343,7 +1370,7 @@ body {
     text-align: center;
   }
   .b-footer__img-container {
-    width: 70%;
+    width: 65%;
     display: block;
     padding-left: 38px;
   }

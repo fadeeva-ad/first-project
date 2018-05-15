@@ -241,7 +241,6 @@ body {
     font-size:36px;
     font-family:"OpenSans Light";
     letter-spacing:normal;
-    
 
     &__redstar-container {
         position:relative;
@@ -356,6 +355,7 @@ body {
         box-shadow: -3px 5px 20px @colorTxt;
         text-transform: uppercase;
         letter-spacing: -0.2px;
+        cursor: pointer;
     }
 
     &__call-me:hover {
@@ -712,6 +712,7 @@ body {
         font-family: "OpenSans SemiBold";
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        cursor: pointer;
     }
     &__callme:hover {
         background-color:#ffffff;
@@ -732,6 +733,7 @@ body {
         width: 205px;
         margin-right: 12px;
         margin-bottom: -5px;
+        cursor: pointer;
     }
 
     &__img {
@@ -748,6 +750,7 @@ body {
         line-height: 41px;
         vertical-align: top;
         letter-spacing: -0.8px;
+        cursor: pointer;
     }
 
     &__number:hover {
@@ -772,6 +775,7 @@ body {
         height: 29px;
         margin-top: 12px;
         margin-bottom: -10px;
+        cursor: pointer;
     }
 
     &__picture {
@@ -783,6 +787,7 @@ body {
         font-size: 14px;
         color: @logoColor;
         text-decoration:none;
+        cursor: pointer;
     }
 
     &__link:hover {
@@ -808,11 +813,14 @@ body {
 .b-logo {
     margin-bottom: 20px;
 }
+.b-contacts {
+    margin-left: 0;
+}
 .b-contacts::after {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
 }
 .b-header-content {
@@ -830,7 +838,7 @@ body {
     align-items: center;
 
     &__redstar {
-        top: 8px !important; 
+        top: 8px !important;
         left: 11px !important;
 
         &--position{
@@ -884,7 +892,7 @@ body {
 
     &__italic {
         width:auto;
-        
+
         &--sign::before {
             left: -12px;
             bottom: -46px;
@@ -892,7 +900,10 @@ body {
         }
     }
 }
-
+.b-form-title {
+    width: auto;
+    font-size:22px;
+}
 .b-redform {
     width:auto;
     text-align:center;
@@ -930,11 +941,16 @@ body {
 .b-logo {
     margin-bottom: 20px;
 }
+
+.b-contacts{
+    margin-left: 0;
+}
+
 .b-contacts::after {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
 }
 .b-header-content {
@@ -1004,6 +1020,7 @@ body {
 .b-list {
     text-align: center;
     width: auto;
+    font-size:22px;
 }
 
 .b-text {
@@ -1031,6 +1048,7 @@ body {
 
         }
         &--sign::before {
+            transform: scale(0.6);
         }
     }
     &__mod {
@@ -1123,7 +1141,7 @@ body {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
 }
 
@@ -1156,6 +1174,7 @@ body {
 
 .b-form {
     width:auto;
+    font-size:22px;
 
     &__redstar {
         top: 8px !important; /* почему-то перебивают друг друга с другими разрешениями экранов */
@@ -1169,74 +1188,80 @@ body {
 
     &__name {
         width:80%;
-        font-size:30px;
+        font-size:22px !important;
     }
 
     &__name::-webkit-input-placeholder {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__name::-moz-placeholder {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__name::-moz-placeholder {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__name::-ms-input-placeholder {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number {
-        width:80%;
-        font-size:30px;
+        width:95%;
+        font-size:22px;
     }
 
     &__number::-webkit-input-placeholder {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number::-moz-placeholder {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number::-moz-placeholder {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number::-ms-input-placeholder  {
         color: @colorTxt;
-        font-size:30px;
+        font-size:22px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__call-me {
         width: auto;
-        font-size: 30px;
+        font-size: 22px;
     }
+}
+
+.b-form-title {
+    width: 90%;
+    padding: 0px 22px 37px;
+    font-size: 18px;
 }
 
 .b-block {
@@ -1304,9 +1329,9 @@ body {
             left: 139px;
         }
         &--sign::before {
-            left:-13px;
-            bottom:-53px;
-            transform: scale(0.7);
+            left:-18px;
+            bottom: -66px;
+            transform: scale(0.5);
         }
     }
 }
@@ -1320,7 +1345,7 @@ body {
     }
     &__img-container {
         margin: 0;
-        padding:0 71px;
+        padding:0 69px;
     }
 }
 }
@@ -1371,7 +1396,7 @@ body {
     border-left: 14px solid transparent;
     border-right: 14px solid transparent;
     border-bottom: 14px solid rgba(255, 255, 255, 0.8);
-    left: 45%;
+    left: 47%;
     top: -28px;
 }
 
@@ -1437,64 +1462,64 @@ body {
     }
     &__name {
         width:70%;
-        font-size:20px;
+        font-size:17px;
     }
     &__name::-webkit-input-placeholder {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__name::-moz-placeholder {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__name::-moz-placeholder {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__name::-ms-input-placeholder {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number {
         width:80%;
-        font-size:20px;
+        font-size:17px;
     }
     &__number::-webkit-input-placeholder {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number::-moz-placeholder {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number::-moz-placeholder {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
 
     &__number::-ms-input-placeholder  {
         color: @colorTxt;
-        font-size:20px;
+        font-size:17px;
         font-family:"OpenSans Light";
         text-transform: uppercase;
     }
@@ -1584,8 +1609,9 @@ body {
     }
 }
 .b-form-title {
-    font-size: 20px;
-    padding: 10px 20px !important;
+    display:block;
+    font-size: 16px;
+    padding: 10px 21px !important;
 }
 .b-footer {
     width:auto;
@@ -1595,7 +1621,7 @@ body {
     }
 
     &__img-container {
-        width: 70%;
+        width: 65%;
         display: block;
         padding-left: 38px;
     }
